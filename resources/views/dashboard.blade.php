@@ -14,7 +14,7 @@
                     <br>
                     {{-- page button --}}
                     <a href="{{ route('urinproduct.index') }}" class="inline-block px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded">
-                        Product Page
+                        Go to Product Page
                     </a>
                     <br>
                     <br>
