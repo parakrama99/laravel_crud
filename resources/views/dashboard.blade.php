@@ -18,7 +18,7 @@
                     </a>
                     <br>
                     <br>
-                    <a href="" class="inline-block px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded">
+                    <a href="{{ route('users.index') }}"  class="inline-block px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded">
                         add users
                     </a>
 

@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dbtnproductController;
+use App\Http\Controllers\userController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -26,9 +28,18 @@ Route::put('/product/{item}/update', [dbtnproductController::class, 'fnupdate'])
 // delete button
 Route::delete('/product/{item}/delete', [dbtnproductController::class, 'fndelete'])->name('urinproduct.delete');
 
+// user view
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
+
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
+// middleware
 
 Route::middleware('auth')->group(function () {
 
