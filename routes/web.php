@@ -29,12 +29,12 @@ Route::put('/product/{item}/update', [dbtnproductController::class, 'fnupdate'])
 Route::delete('/product/{item}/delete', [dbtnproductController::class, 'fndelete'])->name('urinproduct.delete');
 
 
-// user view
-Route::get('/users', [UserController::class, 'index'])->name('users.index');
+// // user view
+Route::get('/users', [UserController::class, 'index'])->name('user.index');
+
 
 // user.edit,user.destroy,... for all this is the route
 Route::resource('user', UserController::class)->shallow();
-
 
 
 
