@@ -29,7 +29,7 @@ Route::put('/product/{item}/update', [dbtnproductController::class, 'fnupdate'])
 Route::delete('/product/{item}/delete', [dbtnproductController::class, 'fndelete'])->name('urinproduct.delete');
 
 
-// // user view
+//from dashboard add users button
 Route::get('/users', [UserController::class, 'index'])->name('user.index');
 
 

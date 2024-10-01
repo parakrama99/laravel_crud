@@ -2,7 +2,13 @@
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
             <div class="p-6 text-gray-900">
-                <h3 class="text-lg font-semibold">Users</h3>
+                <h3 class="text-lg font-semibold">Users information</h3>
+                <br>
+                <form action="{{ route('user.create') }}" method="get">
+                    <button type="submit" class="btn btn-primary">Create User</button>
+                </form>
+                <br>
+                <br>
                 <table class="min-w-full">
                     <thead>
                         <tr>
